@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>אדרה | סרטים לפאה</title>
+  <meta name="description" content="סרטים לפאה – אחיזה יציבה, נוחות לאורך כל היום ומראה טבעי. חנות אונליין עם משלוח עד הבית.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- פס הודעה עליון -->
+  <div class="topbar">משלוח חינם בהזמנה מעל 150 ₪ · <span class="ph">[טקסט לדוגמה – לעדכן]</span></div>
+
+  <!-- כותרת -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">אדרה<span>סרטים לפאה</span></a>
+      <nav class="nav" id="nav">
+        <a href="#shop">החנות</a>
+        <a href="#about">מה זה סרט לפאה</a>
+        <a href="#how">איך משתמשים</a>
+        <a href="#reviews">לקוחות ממליצות</a>
+        <a href="#faq">שאלות נפוצות</a>
+        <a href="#contact">צור קשר</a>
+      </nav>
+      <div class="header__actions">
+        <button class="cart-btn" id="cartOpen" aria-label="פתיחת סל הקניות">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="תפריט">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">נוחות · אחיזה · ביטחון</p>
+        <h1>הפאה נשארת במקום.<br>את נשארת בנוח.</h1>
+        <p class="lead">סרטים לפאה בעבודת יד – רכים, נושמים ונגד החלקה. בלי סיכות, בלי כאבי ראש, כל היום.</p>
+        <div class="hero__cta">
+          <a href="#shop" class="btn btn--primary">לחנות</a>
+          <a href="#about" class="btn btn--ghost">למה צריך סרט?</a>
+        </div>
+        <ul class="hero__badges">
+          <li>✓ מתאים לכל סוגי הפאות</li>
+          <li>✓ מתכוונן לכל היקף ראש</li>
+          <li>✓ משלוח מהיר עד הבית</li>
+        </ul>
+      </div>
+      <div class="hero__media">
+        <div class="media-ph media-ph--tall">
+          <span>תמונה / סרטון ראשי<br><small>(יילקח מהטיקטוק / פייסבוק)</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- יתרונות -->
+  <section class="features">
+    <div class="container features__grid">
+      <div class="feature"><div class="feature__icon">🤍</div><h3>אחיזה יציבה</h3><p>סיליקון עדין בצד הפנימי מונע מהפאה לזוז או להחליק.</p></div>
+      <div class="feature"><div class="feature__icon">☁️</div><h3>נוחות כל היום</h3><p>בד רך ונושם, בלי לחץ על הרקות ובלי כאבי ראש.</p></div>
+      <div class="feature"><div class="feature__icon">🌿</div><h3>שומר על השיער</h3><p>מפחית חיכוך ושבירה של השיער הטבעי מתחת לפאה.</p></div>
+      <div class="feature"><div class="feature__icon">✨</div><h3>מראה מושלם</h3><p>נבלע מתחת לפאה ונותן קו פנים טבעי ונקי.</p></div>
+    </div>
+  </section>
+
+  <!-- חנות -->
+  <section class="shop" id="shop">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">החנות</p>
+        <h2>בחרי את הסרט שלך</h2>
+        <p class="muted">המוצרים והמחירים כאן לדוגמה בלבד – נעדכן לפי הקטלוג האמיתי.</p>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="chip is-active" data-filter="all">הכל</button>
+        <button class="chip" data-filter="velvet">קטיפה</button>
+        <button class="chip" data-filter="silicone">סיליקון</button>
+        <button class="chip" data-filter="lace">תחרה</button>
+        <button class="chip" data-filter="bundle">מארזים</button>
+      </div>
+
+      <div class="products" id="products"><!-- נבנה ב-JS --></div>
+    </div>
+  </section>
+
+  <!-- מה זה סרט לפאה -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__media">
+        <div class="media-ph"><span>תמונה: סרט על הראש<br><small>לפני / אחרי</small></span></div>
+      </div>
+      <div class="about__text">
+        <p class="eyebrow">קצת הסבר</p>
+        <h2>מה זה סרט לפאה, ולמה כדאי?</h2>
+        <p>סרט לפאה (Wig Grip / Wig Band) הוא רצועה רכה שעונדים על הראש לפני הנחת הפאה. הצד הפנימי מחזיק את השיער הטבעי, והצד החיצוני "תופס" את הפאה ומונע ממנה לזוז.</p>
+        <p>הסרט מחליף את הצורך בסיכות, קליפסים ודבקים, ומאפשר להרגיש בטוחה לאורך כל היום – בעבודה, בשמחות ועם הילדים.</p>
+        <h3>למי זה מתאים?</h3>
+        <ul class="checklist">
+          <li>לנשים שהפאה זזה להן או מחליקה אחורה</li>
+          <li>למי שסובלת מכאבי ראש או לחץ מהפאה</li>
+          <li>לנשים עם שיער קצר מאוד / ללא שיער</li>
+          <li>לכל מי שרוצה קו פנים טבעי ונקי יותר</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- איך בוחרים -->
+  <section class="compare">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">מדריך קצר</p>
+        <h2>איזה סרט מתאים לי?</h2>
+      </div>
+      <div class="table-wrap">
+        <table class="compare-table">
+          <thead><tr><th></th><th>קטיפה</th><th>סיליקון</th><th>תחרה</th></tr></thead>
+          <tbody>
+            <tr><td>אחיזה</td><td>●●●○</td><td>●●●●</td><td>●●○○</td></tr>
+            <tr><td>נוחות</td><td>●●●●</td><td>●●●○</td><td>●●●●</td></tr>
+            <tr><td>נושם / לקיץ</td><td>●●○○</td><td>●●●○</td><td>●●●●</td></tr>
+            <tr><td>מתאים במיוחד ל…</td><td>שימוש יומיומי</td><td>פאות כבדות / ארוכות</td><td>פאות לייס / קיץ</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted center">* טבלה לדוגמה – נמלא לפי הסוגים שהמותג באמת מוכר.</p>
+    </div>
+  </section>
+
+  <!-- איך משתמשים -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">איך משתמשים</p>
+        <h2>3 צעדים פשוטים</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step__num">1</span><h3>אוספים את השיער</h3><p>מסדרים את השיער הטבעי צמוד לראש (קוקו נמוך או צמה).</p></div>
+        <div class="step"><span class="step__num">2</span><h3>עונדים את הסרט</h3><p>מניחים את הסרט על קו השיער, מהדקים מאחור בסקוץ' או בגומי.</p></div>
+        <div class="step"><span class="step__num">3</span><h3>מניחים את הפאה</h3><p>מניחים את הפאה מעל – והיא נשארת במקום כל היום.</p></div>
+      </div>
+      <div class="video-row">
+        <div class="media-ph media-ph--video"><span>▶ סרטון הדרכה מהטיקטוק</span></div>
+        <div class="media-ph media-ph--video"><span>▶ סרטון לפני/אחרי</span></div>
+        <div class="media-ph media-ph--video"><span>▶ סרטון לקוחה</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- המלצות -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">לקוחות ממליצות</p>
+        <h2>מה אומרות עלינו</h2>
+      </div>
+      <div class="reviews__grid">
+        <blockquote class="review"><div class="stars">★★★★★</div><p>"סוף סוף הפאה לא זזה לי! לובשת את הסרט כל יום כבר חודשיים, לא מרגישה אותו בכלל."</p><cite>— שרה, בני ברק <span class="ph">[לדוגמה]</span></cite></blockquote>
+        <blockquote class="review"><div class="stars">★★★★★</div><p>"נפרדתי מכאבי הראש. איכות מעולה ושירות מהיר ואדיב."</p><cite>— רבקה, ירושלים <span class="ph">[לדוגמה]</span></cite></blockquote>
+        <blockquote class="review"><div class="stars">★★★★★</div><p>"קניתי לי ולאחיות שלי. מתנה מושלמת לכלה!"</p><cite>— חיה, אלעד <span class="ph">[לדוגמה]</span></cite></blockquote>
+      </div>
+      <p class="muted center">* נחליף בצילומי מסך של תגובות אמיתיות מהפייסבוק ומהטיקטוק.</p>
+    </div>
+  </section>
+
+  <!-- עלינו -->
+  <section class="story">
+    <div class="container story__inner">
+      <div class="story__text">
+        <p class="eyebrow">הסיפור שלנו</p>
+        <h2>נעים להכיר</h2>
+        <p class="ph-block">[כאן ייכנס סיפור קצר על בעל/ת העסק: מי זה, איך התחיל הרעיון, למה הסרטים מיוחדים, עבודת יד / ייצור בארץ וכו'. נכתוב יחד אחרי שתעבירי את החומרים.]</p>
+      </div>
+      <div class="media-ph media-ph--round"><span>תמונה של<br>בעל/ת העסק</span></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container faq__inner">
+      <div class="section-head">
+        <p class="eyebrow">שאלות נפוצות</p>
+        <h2>יש שאלה? יש תשובה</h2>
+      </div>
+      <details><summary>האם הסרט מתאים לכל סוג פאה?</summary><p>כן, הסרט מתאים לפאות טבעיות וסינתטיות, לייס-טופ, סקין-טופ ופאות קצרות או ארוכות.</p></details>
+      <details><summary>איך יודעים איזו מידה להזמין?</summary><p>הסרט מתכוונן בסקוץ' ומתאים להיקף ראש של 52–60 ס"מ. <span class="ph">[לאמת מול המוצר]</span></p></details>
+      <details><summary>איך מכבסים את הסרט?</summary><p>כביסת יד במים פושרים עם סבון עדין, וייבוש באוויר. <span class="ph">[לאמת]</span></p></details>
+      <details><summary>כמה זמן לוקח משלוח?</summary><p>משלוח עד הבית תוך 3–5 ימי עסקים, או איסוף עצמי. <span class="ph">[לאמת]</span></p></details>
+      <details><summary>אפשר להחליף או להחזיר?</summary><p>מטעמי היגיינה ניתן להחזיר רק מוצר באריזה סגורה תוך 14 יום. <span class="ph">[לאמת מדיניות]</span></p></details>
+    </div>
+  </section>
+
+  <!-- צור קשר -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div>
+        <p class="eyebrow">צור קשר</p>
+        <h2>רוצה עזרה בבחירה?</h2>
+        <p>שלחי לנו הודעה בוואטסאפ ונשמח לייעץ איזה סרט הכי מתאים לך.</p>
+        <div class="contact__links">
+          <a class="btn btn--whatsapp" href="#" id="waContact">וואטסאפ</a>
+          <a class="social" href="#" aria-label="פייסבוק">Facebook</a>
+          <a class="social" href="#" aria-label="טיקטוק">TikTok</a>
+        </div>
+      </div>
+      <form class="contact__form" onsubmit="event.preventDefault(); alert('זו סקיצה – הטופס עוד לא מחובר');">
+        <input type="text" placeholder="שם מלא" required>
+        <input type="tel" placeholder="טלפון" required>
+        <textarea rows="3" placeholder="איך אפשר לעזור?"></textarea>
+        <button class="btn btn--primary" type="submit">שליחה</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="logo">אדרה<span>סרטים לפאה</span></div>
+      <p>© 2026 כל הזכויות שמורות · תקנון · מדיניות משלוחים והחזרות · הצהרת נגישות</p>
+    </div>
+  </footer>
+
+  <!-- וואטסאפ צף -->
+  <a class="wa-float" href="#" id="waFloat" aria-label="וואטסאפ">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.6 4.9c2 .9 2.9 1 3.9.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.7-.5Z"/></svg>
+  </a>
+
+  <!-- סל קניות -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart" aria-label="סל קניות">
+    <div class="cart__head">
+      <h3>הסל שלי</h3>
+      <button class="icon-btn" id="cartClose" aria-label="סגירה">✕</button>
+    </div>
+    <div class="cart__items" id="cartItems"></div>
+    <div class="cart__foot">
+      <div class="cart__total"><span>סה"כ</span><strong id="cartTotal">0 ₪</strong></div>
+      <button class="btn btn--primary btn--block" id="checkout">המשך לתשלום</button>
+      <p class="muted small center">בסקיצה: ההזמנה נשלחת כהודעת וואטסאפ. בגרסה הסופית – סליקה באשראי / ביט.</p>
+    </div>
+  </aside>
+
+  <!-- חלון מוצר -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="modal__box">
+      <button class="icon-btn modal__close" id="modalClose" aria-label="סגירה">✕</button>
+      <div class="modal__body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">נוסף לסל ✓</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
